@@ -21,6 +21,13 @@ public class EmployeeService {
         return null;
     }
 
+    public List<Employee> getAllEmployees() {
+        if (employees == null) {
+            return null;
+        }
+        return employees;
+    }
+
     public Employee addEmployee(EmployeeDTO employeeDTO) {
         Employee employee = new Employee();
         employee.setId(employeeDTO.getId());

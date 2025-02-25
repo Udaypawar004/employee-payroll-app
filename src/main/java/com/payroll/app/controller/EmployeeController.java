@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/employee")
 public class EmployeeController {
@@ -15,8 +17,12 @@ public class EmployeeController {
     private EmployeeService employeeService;
     // GET all employees
     @GetMapping
-    public ResponseEntity<String> getAllEmployees() {
-        return new ResponseEntity<>("Hello World - Get All Employees", HttpStatus.OK);
+    public ResponseEntity<List<Employee>> getAllEmployees() {
+        List<Employee> employees = employeeService.getAllEmployees();
+        if(employees == null) {
+            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+        }
+        return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
     // GET employee by ID
@@ -24,7 +30,7 @@ public class EmployeeController {
     public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
         Employee employee = employeeService.getEmployee(id);
         if(employee == null) {
-            new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
         return new ResponseEntity<>(employee, HttpStatus.OK);
     }
@@ -34,7 +40,7 @@ public class EmployeeController {
     public ResponseEntity<Employee> createEmployee(@RequestBody EmployeeDTO employeeDTO) {
         Employee employee = employeeService.addEmployee(employeeDTO);
         if(employee == null) {
-            new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
         return new ResponseEntity<>(employee, HttpStatus.CREATED);
     }
@@ -44,7 +50,7 @@ public class EmployeeController {
     public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeData) {
         Employee employee = employeeService.updateEmployee(id, employeeData);
         if(employee == null) {
-            new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
         return new ResponseEntity<>(employee, HttpStatus.OK);
     }
