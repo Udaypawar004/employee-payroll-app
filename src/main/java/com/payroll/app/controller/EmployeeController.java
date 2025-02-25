@@ -1,7 +1,6 @@
 package com.payroll.app.controller;
 
 import com.payroll.app.dto.EmployeeDTO;
-import com.payroll.app.model.Employee;
 import com.payroll.app.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,8 +16,8 @@ public class EmployeeController {
     private EmployeeService employeeService;
     // GET all employees
     @GetMapping
-    public ResponseEntity<List<Employee>> getAllEmployees() {
-        List<Employee> employees = employeeService.getAllEmployees();
+    public ResponseEntity<List<EmployeeDTO>> getAllEmployees() {
+        List<EmployeeDTO> employees = employeeService.getAllEmployees();
         if(employees == null) {
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
@@ -27,8 +26,8 @@ public class EmployeeController {
 
     // GET employee by ID
     @GetMapping("/{id}")
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
-        Employee employee = employeeService.getEmployee(id);
+    public ResponseEntity<EmployeeDTO> getEmployeeById(@PathVariable Long id) {
+        EmployeeDTO employee = employeeService.getEmployee(id);
         if(employee == null) {
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
@@ -37,8 +36,8 @@ public class EmployeeController {
 
     // POST - Create new employee
     @PostMapping
-    public ResponseEntity<Employee> createEmployee(@RequestBody EmployeeDTO employeeDTO) {
-        Employee employee = employeeService.addEmployee(employeeDTO);
+    public ResponseEntity<EmployeeDTO> createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        EmployeeDTO employee = employeeService.addEmployee(employeeDTO);
         if(employee == null) {
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
@@ -47,8 +46,8 @@ public class EmployeeController {
 
     // PUT - Update existing employee
     @PutMapping("/{id}")
-    public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeData) {
-        Employee employee = employeeService.updateEmployee(id, employeeData);
+    public ResponseEntity<EmployeeDTO> updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeData) {
+        EmployeeDTO employee = employeeService.updateEmployee(id, employeeData);
         if(employee == null) {
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
