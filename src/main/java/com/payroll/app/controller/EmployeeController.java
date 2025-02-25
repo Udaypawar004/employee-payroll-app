@@ -1,5 +1,9 @@
 package com.payroll.app.controller;
 
+import com.payroll.app.dto.EmployeeDTO;
+import com.payroll.app.model.Employee;
+import com.payroll.app.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -7,6 +11,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/employee")
 public class EmployeeController {
+    @Autowired
+    private EmployeeService employeeService;
     // GET all employees
     @GetMapping
     public ResponseEntity<String> getAllEmployees() {
@@ -15,25 +21,42 @@ public class EmployeeController {
 
     // GET employee by ID
     @GetMapping("/{id}")
-    public ResponseEntity<String> getEmployeeById(@PathVariable Long id) {
-        return new ResponseEntity<>("Hello World - Get Employee by ID: " + id, HttpStatus.OK);
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
+        Employee employee = employeeService.getEmployee(id);
+        if(employee == null) {
+            new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+        }
+        return new ResponseEntity<>(employee, HttpStatus.OK);
     }
 
     // POST - Create new employee
     @PostMapping
-    public ResponseEntity<String> createEmployee(@RequestBody Object employeeData) {
-        return new ResponseEntity<>("Hello World - Create Employee", HttpStatus.CREATED);
+    public ResponseEntity<Employee> createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        Employee employee = employeeService.addEmployee(employeeDTO);
+        if(employee == null) {
+            new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+        }
+        return new ResponseEntity<>(employee, HttpStatus.CREATED);
     }
 
     // PUT - Update existing employee
     @PutMapping("/{id}")
-    public ResponseEntity<String> updateEmployee(@PathVariable Long id, @RequestBody Object employeeData) {
-        return new ResponseEntity<>("Hello World - Update Employee with ID: " + id, HttpStatus.OK);
+    public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeData) {
+        Employee employee = employeeService.updateEmployee(id, employeeData);
+        if(employee == null) {
+            new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+        }
+        return new ResponseEntity<>(employee, HttpStatus.OK);
     }
 
     // DELETE - Delete employee
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteEmployee(@PathVariable Long id) {
-        return new ResponseEntity<>("Hello World - Delete Employee with ID: " + id, HttpStatus.OK);
+    public String deleteEmployee(@PathVariable Long id) {
+        boolean isSuccess = employeeService.deleteEmployee(id);
+
+        if(isSuccess) {
+            return "Deleted successfully";
+        }
+        return "Can't delete";
     }
 }

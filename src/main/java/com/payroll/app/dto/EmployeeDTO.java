@@ -1,18 +1,16 @@
 package com.payroll.app.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 public class EmployeeDTO {
     @Id
     private Long id;
     private String name;
-    private String salary;
+    private double salary;
 
     public EmployeeDTO() {}
 
-    public EmployeeDTO(Long id, String name, String salary) {
+    public EmployeeDTO(Long id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -34,11 +32,11 @@ public class EmployeeDTO {
         this.name = name;
     }
 
-    public String getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 }
