@@ -2,6 +2,7 @@ package com.payroll.app.controller;
 
 import com.payroll.app.dto.EmployeeDTO;
 import com.payroll.app.service.EmployeeService;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -42,7 +43,7 @@ public class EmployeeController {
 
     // POST - Create new employee
     @PostMapping
-    public ResponseEntity<EmployeeDTO> createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+    public ResponseEntity<EmployeeDTO> createEmployee(@Valid @RequestBody EmployeeDTO employeeDTO) {
         EmployeeDTO employee = employeeService.addEmployee(employeeDTO);
         if(employee == null) {
             log.error("Error while adding employee.");
@@ -54,7 +55,7 @@ public class EmployeeController {
 
     // PUT - Update existing employee
     @PutMapping("/{id}")
-    public ResponseEntity<EmployeeDTO> updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeData) {
+    public ResponseEntity<EmployeeDTO> updateEmployee(@Valid @PathVariable Long id, @Valid @RequestBody EmployeeDTO employeeData) {
         EmployeeDTO employee = employeeService.updateEmployee(id, employeeData);
         if(employee == null) {
             log.error("Error while updating the employee.");

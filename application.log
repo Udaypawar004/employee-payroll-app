@@ -630,3 +630,32 @@ java.util.NoSuchElementException: null
 2025-11-27 11:11:14.226 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.682 seconds (process running for 2.048) 
 2025-11-27 11:11:14.229 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
 2025-11-27 11:11:14.230 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-52-27 11:52:44.467 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 14832 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-52-27 11:52:44.469 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-52-27 11:52:45.470 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.495 seconds (process running for 1.806) 
+2025-52-27 11:52:45.472 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-52-27 11:52:45.473 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-59-27 11:59:07.030 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 15542 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-59-27 11:59:07.031 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-59-27 11:59:08.110 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.597 seconds (process running for 1.928) 
+2025-59-27 11:59:08.113 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-59-27 11:59:08.114 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-59-27 11:59:33.988 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-59-27 11:59:34.003 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-59-27 11:59:42.768 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-59-27 11:59:42.769 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-59-27 11:59:47.741 [INFO ] [http-nio-8080-exec-4] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-59-27 11:59:47.742 [INFO ] [http-nio-8080-exec-4] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-59-27 11:59:53.864 [INFO ] [http-nio-8080-exec-5] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-59-27 11:59:53.865 [INFO ] [http-nio-8080-exec-5] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-59-27 11:59:57.275 [INFO ] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
+2025-59-27 11:59:57.276 [INFO ] [http-nio-8080-exec-6] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
+2025-03-27 12:03:34.919 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 16049 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-03-27 12:03:34.920 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-03-27 12:03:36.093 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.704 seconds (process running for 1.998) 
+2025-03-27 12:03:36.096 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-03-27 12:03:36.097 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-03-27 12:03:47.662 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
+2025-03-27 12:03:47.662 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
+2025-03-27 12:03:51.778 [WARN ] [http-nio-8080-exec-3] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-03-27 12:03:51.808 [WARN ] [http-nio-8080-exec-3] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.payroll.app.dto.EmployeeDTO> com.payroll.app.controller.EmployeeController.createEmployee(com.payroll.app.dto.EmployeeDTO) with 2 errors: [Field error in object 'employeeDTO' on field 'name': rejected value [null]; codes [NotNull.employeeDTO.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name]]; default message [must not be null]] [Field error in object 'employeeDTO' on field 'name': rejected value [null]; codes [NotEmpty.employeeDTO.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name]]; default message [Employee name can't be empty]] ] 
