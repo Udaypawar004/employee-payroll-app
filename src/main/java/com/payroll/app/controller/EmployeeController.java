@@ -2,6 +2,7 @@ package com.payroll.app.controller;
 
 import com.payroll.app.dto.EmployeeDTO;
 import com.payroll.app.service.EmployeeService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/employee")
 public class EmployeeController {
@@ -19,8 +21,10 @@ public class EmployeeController {
     public ResponseEntity<List<EmployeeDTO>> getAllEmployees() {
         List<EmployeeDTO> employees = employeeService.getAllEmployees();
         if(employees == null) {
+            log.error("Employee data are not there");
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
+        log.info("Getting all employees successfully.");
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
@@ -29,8 +33,10 @@ public class EmployeeController {
     public ResponseEntity<EmployeeDTO> getEmployeeById(@PathVariable Long id) {
         EmployeeDTO employee = employeeService.getEmployee(id);
         if(employee == null) {
+            log.error("Error while getting the employee by there id.");
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
+        log.info("Successfully got employee.");
         return new ResponseEntity<>(employee, HttpStatus.OK);
     }
 
@@ -39,8 +45,10 @@ public class EmployeeController {
     public ResponseEntity<EmployeeDTO> createEmployee(@RequestBody EmployeeDTO employeeDTO) {
         EmployeeDTO employee = employeeService.addEmployee(employeeDTO);
         if(employee == null) {
+            log.error("Error while adding employee.");
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
+        log.info("Employee added successfully.");
         return new ResponseEntity<>(employee, HttpStatus.CREATED);
     }
 
@@ -49,8 +57,10 @@ public class EmployeeController {
     public ResponseEntity<EmployeeDTO> updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeData) {
         EmployeeDTO employee = employeeService.updateEmployee(id, employeeData);
         if(employee == null) {
+            log.error("Error while updating the employee.");
             return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
         }
+        log.info("Employee updated successfully.");
         return new ResponseEntity<>(employee, HttpStatus.OK);
     }
 
@@ -60,8 +70,10 @@ public class EmployeeController {
         boolean isSuccess = employeeService.deleteEmployee(id);
 
         if(isSuccess) {
+            log.info("Employee deleted successfully.");
             return "Deleted successfully";
         }
+        log.error("Error while deleting the employee.");
         return "Can't delete";
     }
 }
