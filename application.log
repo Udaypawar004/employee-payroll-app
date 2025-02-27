@@ -697,3 +697,28 @@ java.util.NoSuchElementException: null
 2025-01-27 13:01:31.484 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
 2025-01-27 13:01:31.485 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
 2025-01-27 13:01:34.716 [ERROR] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Error while deleting the employee. 
+2025-36-27 13:36:59.572 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 24028 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-36-27 13:36:59.575 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-37-27 13:37:00.823 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.822 seconds (process running for 2.115) 
+2025-37-27 13:37:00.825 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-37-27 13:37:00.827 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-38-27 13:38:23.727 [WARN ] [http-nio-8080-exec-1] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value] 
+2025-40-27 13:40:42.485 [WARN ] [http-nio-8080-exec-3] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-40-27 13:40:42.498 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-40-27 13:40:42.515 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-42-27 13:42:33.040 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 24584 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-42-27 13:42:33.042 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-42-27 13:42:34.100 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.578 seconds (process running for 1.886) 
+2025-42-27 13:42:34.103 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-42-27 13:42:34.104 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-42-27 13:42:38.658 [WARN ] [http-nio-8080-exec-1] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-42-27 13:42:38.697 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-42-27 13:42:38.699 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-43-27 13:43:05.345 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 24717 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-43-27 13:43:05.347 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-43-27 13:43:06.647 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.843 seconds (process running for 2.149) 
+2025-43-27 13:43:06.657 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-43-27 13:43:06.661 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-43-27 13:43:09.777 [WARN ] [http-nio-8080-exec-2] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-43-27 13:43:09.828 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-43-27 13:43:09.832 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Employee added successfully. 

@@ -41,10 +41,7 @@ public class EmployeeService {
     }
 
     public EmployeeDTO addEmployee(EmployeeDTO employeeDTO) {
-        Employee employee = new Employee();
-        employee.setId(employeeDTO.getId());
-        employee.setName(employeeDTO.getName());
-        employee.setSalary(employeeDTO.getSalary());
+        Employee employee = modelMapper.map(employeeDTO, Employee.class);
         employees.add(employee);
         log.info("Employee added successfully.");
         return modelMapper.map(employee, EmployeeDTO.class);

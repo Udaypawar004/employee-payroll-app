@@ -5,10 +5,14 @@ import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class EmployeeDTO {
     @Id
     @NotNull
@@ -24,4 +28,14 @@ public class EmployeeDTO {
     @PositiveOrZero
     @Min(value = 500, message = "Min wage should be more than 500")
     private double salary;
+
+    public String gender;
+
+    public String startDate;
+
+    public String note;
+
+    public String profilePic;
+
+    public List<String> department;
 }
