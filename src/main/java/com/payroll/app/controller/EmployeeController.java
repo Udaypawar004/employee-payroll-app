@@ -1,6 +1,7 @@
 package com.payroll.app.controller;
 
 import com.payroll.app.dto.EmployeeDTO;
+import com.payroll.app.exceptions.EmployeePayrollException;
 import com.payroll.app.service.EmployeeService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +36,7 @@ public class EmployeeController {
         EmployeeDTO employee = employeeService.getEmployee(id);
         if(employee == null) {
             log.error("Error while getting the employee by there id.");
-            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+            throw new EmployeePayrollException("ID Not found. while getting");
         }
         log.info("Successfully got employee.");
         return new ResponseEntity<>(employee, HttpStatus.OK);
@@ -47,7 +48,7 @@ public class EmployeeController {
         EmployeeDTO employee = employeeService.addEmployee(employeeDTO);
         if(employee == null) {
             log.error("Error while adding employee.");
-            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+            throw new EmployeePayrollException("Error while Creating Employee");
         }
         log.info("Employee added successfully.");
         return new ResponseEntity<>(employee, HttpStatus.CREATED);
@@ -59,7 +60,7 @@ public class EmployeeController {
         EmployeeDTO employee = employeeService.updateEmployee(id, employeeData);
         if(employee == null) {
             log.error("Error while updating the employee.");
-            return new ResponseEntity<>(HttpStatus.BAD_GATEWAY);
+            throw new EmployeePayrollException("Error while updating employee");
         }
         log.info("Employee updated successfully.");
         return new ResponseEntity<>(employee, HttpStatus.OK);
@@ -75,6 +76,6 @@ public class EmployeeController {
             return "Deleted successfully";
         }
         log.error("Error while deleting the employee.");
-        return "Can't delete";
+        throw new EmployeePayrollException("Error while deleting employee.");
     }
 }

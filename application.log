@@ -669,3 +669,31 @@ java.util.NoSuchElementException: null
 2025-35-27 12:35:55.976 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
 2025-36-27 12:36:00.535 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
 2025-36-27 12:36:00.536 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-51-27 12:51:43.439 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 20118 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-51-27 12:51:43.441 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-51-27 12:51:44.649 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.799 seconds (process running for 2.114) 
+2025-51-27 12:51:44.651 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-51-27 12:51:44.652 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-51-27 12:51:56.807 [ERROR] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Error while getting employee by there id. 
+2025-51-27 12:51:56.808 [ERROR] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Error while getting the employee by there id. 
+2025-52-27 12:52:44.155 [ERROR] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Error while deleting the employee. 
+2025-54-27 12:54:56.575 [ERROR] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Error while getting employee by there id. 
+2025-54-27 12:54:56.575 [ERROR] [http-nio-8080-exec-6] [c.p.a.c.EmployeeController] - Error while getting the employee by there id. 
+2025-58-27 12:58:42.951 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 20855 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-58-27 12:58:42.954 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-58-27 12:58:44.248 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.966 seconds (process running for 2.262) 
+2025-58-27 12:58:44.251 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-58-27 12:58:44.253 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-58-27 12:58:47.923 [ERROR] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Error while getting employee by there id. 
+2025-58-27 12:58:47.923 [ERROR] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Error while getting the employee by there id. 
+2025-59-27 12:59:25.711 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 20997 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-59-27 12:59:25.713 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-59-27 12:59:27.347 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.183 seconds (process running for 2.48) 
+2025-59-27 12:59:27.350 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-59-27 12:59:27.351 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-01-27 13:01:30.042 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 21207 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-01-27 13:01:30.044 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-01-27 13:01:31.482 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.039 seconds (process running for 2.336) 
+2025-01-27 13:01:31.484 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-01-27 13:01:31.485 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-01-27 13:01:34.716 [ERROR] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Error while deleting the employee. 
