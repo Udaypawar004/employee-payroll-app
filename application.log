@@ -1,7 +1,7 @@
-2025-40-27 10:40:03.609 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 8165 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-40-27 10:40:03.612 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-40-27 10:40:04.613 [WARN ] [main] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop' 
-2025-40-27 10:40:04.636 [ERROR] [main] [o.s.b.d.LoggingFailureAnalysisReporter] - 
+2025-04-28 14:04:41.292 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 44556 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-04-28 14:04:41.302 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-04-28 14:04:44.081 [WARN ] [main] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop' 
+2025-04-28 14:04:44.117 [ERROR] [main] [o.s.b.d.LoggingFailureAnalysisReporter] - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -15,710 +15,71 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
  
-2025-40-27 10:40:39.903 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 8479 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-40-27 10:40:39.905 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-40-27 10:40:40.966 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.558 seconds (process running for 1.87) 
-2025-40-27 10:40:40.968 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started... 
-2025-41-27 10:41:02.738 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-41-27 10:41:02.745 [ERROR] [http-nio-8080-exec-2] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null] with root cause 
-java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null
-	at com.payroll.app.service.EmployeeService.addEmployee(EmployeeService.java:49)
-	at com.payroll.app.controller.EmployeeController.createEmployee(EmployeeController.java:46)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-42-27 10:42:08.829 [INFO ] [http-nio-8080-exec-4] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-42-27 10:42:08.831 [ERROR] [http-nio-8080-exec-4] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null] with root cause 
-java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null
-	at com.payroll.app.service.EmployeeService.getAllEmployees(EmployeeService.java:37)
-	at com.payroll.app.controller.EmployeeController.getAllEmployees(EmployeeController.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-43-27 10:43:37.092 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 8894 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-43-27 10:43:37.094 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-43-27 10:43:38.090 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.566 seconds (process running for 1.887) 
-2025-43-27 10:43:38.093 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started... 
-2025-43-27 10:43:48.115 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-43-27 10:43:48.123 [ERROR] [http-nio-8080-exec-2] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null] with root cause 
-java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null
-	at com.payroll.app.service.EmployeeService.addEmployee(EmployeeService.java:50)
-	at com.payroll.app.controller.EmployeeController.createEmployee(EmployeeController.java:46)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-45-27 10:45:08.030 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 9156 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-45-27 10:45:08.032 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-45-27 10:45:08.808 [WARN ] [main] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService': Error creating bean with name 'employeeService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
-2025-45-27 10:45:08.841 [ERROR] [main] [o.s.b.d.LoggingFailureAnalysisReporter] - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field modelMapper in com.payroll.app.service.EmployeeService required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
- 
-2025-45-27 10:45:25.228 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 9245 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-45-27 10:45:25.230 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-45-27 10:45:26.022 [WARN ] [main] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService': Error creating bean with name 'employeeService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
-2025-45-27 10:45:26.051 [ERROR] [main] [o.s.b.d.LoggingFailureAnalysisReporter] - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field modelMapper in com.payroll.app.service.EmployeeService required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
- 
-2025-48-27 10:48:35.358 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 9580 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-48-27 10:48:35.360 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-48-27 10:48:36.388 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.555 seconds (process running for 1.891) 
-2025-48-27 10:48:36.390 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started... 
-2025-48-27 10:48:48.318 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-48-27 10:48:48.340 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-49-27 10:49:20.101 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-49-27 10:49:20.101 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-49-27 10:49:25.027 [INFO ] [http-nio-8080-exec-4] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-49-27 10:49:25.028 [INFO ] [http-nio-8080-exec-4] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-49-27 10:49:41.668 [INFO ] [http-nio-8080-exec-5] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-49-27 10:49:41.668 [INFO ] [http-nio-8080-exec-5] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-49-27 10:49:52.203 [INFO ] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Successfully got employee by id. 
-2025-49-27 10:49:52.204 [INFO ] [http-nio-8080-exec-6] [c.p.a.c.EmployeeController] - Successfully got employee. 
-2025-50-27 10:50:48.685 [INFO ] [http-nio-8080-exec-7] [c.p.a.service.EmployeeService] - Employee update successfully. 
-2025-50-27 10:50:48.689 [ERROR] [http-nio-8080-exec-7] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException] with root cause 
-java.util.NoSuchElementException: null
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1053)
-	at com.payroll.app.service.EmployeeService.updateEmployee(EmployeeService.java:60)
-	at com.payroll.app.controller.EmployeeController.updateEmployee(EmployeeController.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-52-27 10:52:14.699 [INFO ] [http-nio-8080-exec-9] [c.p.a.service.EmployeeService] - Employee update successfully. 
-2025-52-27 10:52:14.699 [ERROR] [http-nio-8080-exec-9] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException] with root cause 
-java.util.NoSuchElementException: null
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1053)
-	at com.payroll.app.service.EmployeeService.updateEmployee(EmployeeService.java:60)
-	at com.payroll.app.controller.EmployeeController.updateEmployee(EmployeeController.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-52-27 10:52:51.034 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-52-27 10:52:51.035 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-53-27 10:53:21.892 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee update successfully. 
-2025-53-27 10:53:21.892 [ERROR] [http-nio-8080-exec-2] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException] with root cause 
-java.util.NoSuchElementException: null
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1053)
-	at com.payroll.app.service.EmployeeService.updateEmployee(EmployeeService.java:60)
-	at com.payroll.app.controller.EmployeeController.updateEmployee(EmployeeController.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-54-27 10:54:26.091 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 9988 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-54-27 10:54:26.093 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-54-27 10:54:27.160 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.59 seconds (process running for 1.894) 
-2025-54-27 10:54:27.163 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started... 
-2025-55-27 10:55:27.495 [ERROR] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Error while updating the employee. 
-2025-55-27 10:55:35.962 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-55-27 10:55:35.978 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-55-27 10:55:39.010 [INFO ] [http-nio-8080-exec-4] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-55-27 10:55:39.011 [INFO ] [http-nio-8080-exec-4] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-55-27 10:55:41.825 [INFO ] [http-nio-8080-exec-5] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-55-27 10:55:41.826 [INFO ] [http-nio-8080-exec-5] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-55-27 10:55:45.072 [INFO ] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-55-27 10:55:45.073 [INFO ] [http-nio-8080-exec-6] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-55-27 10:55:58.934 [ERROR] [http-nio-8080-exec-7] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException] with root cause 
-java.util.NoSuchElementException: null
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1053)
-	at com.payroll.app.service.EmployeeService.deleteEmployee(EmployeeService.java:71)
-	at com.payroll.app.controller.EmployeeController.deleteEmployee(EmployeeController.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-56-27 10:56:09.604 [INFO ] [http-nio-8080-exec-9] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-56-27 10:56:09.604 [INFO ] [http-nio-8080-exec-9] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-56-27 10:56:21.251 [ERROR] [http-nio-8080-exec-10] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException] with root cause 
-java.util.NoSuchElementException: null
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1053)
-	at com.payroll.app.service.EmployeeService.updateEmployee(EmployeeService.java:58)
-	at com.payroll.app.controller.EmployeeController.updateEmployee(EmployeeController.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-58-27 10:58:56.109 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 10350 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-58-27 10:58:56.110 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-58-27 10:58:57.118 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.553 seconds (process running for 1.842) 
-2025-58-27 10:58:57.120 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started... 
-2025-59-27 10:59:05.655 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-59-27 10:59:05.673 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-59-27 10:59:08.954 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-59-27 10:59:08.955 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-59-27 10:59:12.074 [INFO ] [http-nio-8080-exec-4] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-59-27 10:59:12.074 [INFO ] [http-nio-8080-exec-4] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-59-27 10:59:15.162 [INFO ] [http-nio-8080-exec-5] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-59-27 10:59:15.162 [INFO ] [http-nio-8080-exec-5] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-59-27 10:59:21.072 [INFO ] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Employee update successfully. 
-2025-59-27 10:59:21.081 [ERROR] [http-nio-8080-exec-6] [o.a.c.c.C.[.[.[.[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException] with root cause 
-java.util.NoSuchElementException: null
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1053)
-	at com.payroll.app.service.EmployeeService.updateEmployee(EmployeeService.java:62)
-	at com.payroll.app.controller.EmployeeController.updateEmployee(EmployeeController.java:58)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-2025-59-27 10:59:24.769 [INFO ] [http-nio-8080-exec-8] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-59-27 10:59:24.770 [INFO ] [http-nio-8080-exec-8] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-59-27 10:59:57.247 [INFO ] [http-nio-8080-exec-9] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-59-27 10:59:57.248 [INFO ] [http-nio-8080-exec-9] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-00-27 11:00:05.673 [INFO ] [http-nio-8080-exec-10] [c.p.a.service.EmployeeService] - Employee deleted successfully. 
-2025-00-27 11:00:05.673 [INFO ] [http-nio-8080-exec-10] [c.p.a.c.EmployeeController] - Employee deleted successfully. 
-2025-00-27 11:00:08.502 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-00-27 11:00:08.502 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-00-27 11:00:20.455 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-00-27 11:00:20.456 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-00-27 11:00:26.066 [ERROR] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Error while updating the employee. 
-2025-02-27 11:02:53.704 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 10664 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-02-27 11:02:53.708 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-02-27 11:02:54.787 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.702 seconds (process running for 1.996) 
-2025-02-27 11:02:54.790 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started... 
-2025-03-27 11:03:02.191 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-03-27 11:03:02.206 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-03-27 11:03:04.727 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-03-27 11:03:04.728 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-03-27 11:03:08.207 [INFO ] [http-nio-8080-exec-4] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-03-27 11:03:08.207 [INFO ] [http-nio-8080-exec-4] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-03-27 11:03:10.646 [INFO ] [http-nio-8080-exec-5] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-03-27 11:03:10.647 [INFO ] [http-nio-8080-exec-5] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-03-27 11:03:22.823 [INFO ] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Employee update successfully. 
-2025-03-27 11:03:22.824 [INFO ] [http-nio-8080-exec-6] [c.p.a.c.EmployeeController] - Employee updated successfully. 
-2025-03-27 11:03:26.814 [INFO ] [http-nio-8080-exec-7] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-03-27 11:03:26.815 [INFO ] [http-nio-8080-exec-7] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-03-27 11:03:30.378 [INFO ] [http-nio-8080-exec-8] [c.p.a.service.EmployeeService] - Employee deleted successfully. 
-2025-03-27 11:03:30.378 [INFO ] [http-nio-8080-exec-8] [c.p.a.c.EmployeeController] - Employee deleted successfully. 
-2025-03-27 11:03:32.752 [INFO ] [http-nio-8080-exec-9] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-03-27 11:03:32.752 [INFO ] [http-nio-8080-exec-9] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-10-27 11:10:29.877 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 11605 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-10-27 11:10:29.879 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-10-27 11:10:31.037 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.732 seconds (process running for 2.029) 
-2025-10-27 11:10:31.040 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in null Environment 
-2025-10-27 11:10:31.041 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-11-27 11:11:13.063 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 11748 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-11-27 11:11:13.065 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-11-27 11:11:14.226 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.682 seconds (process running for 2.048) 
-2025-11-27 11:11:14.229 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-11-27 11:11:14.230 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-52-27 11:52:44.467 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 14832 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-52-27 11:52:44.469 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-52-27 11:52:45.470 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.495 seconds (process running for 1.806) 
-2025-52-27 11:52:45.472 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-52-27 11:52:45.473 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-59-27 11:59:07.030 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 15542 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-59-27 11:59:07.031 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-59-27 11:59:08.110 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.597 seconds (process running for 1.928) 
-2025-59-27 11:59:08.113 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-59-27 11:59:08.114 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-59-27 11:59:33.988 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-59-27 11:59:34.003 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-59-27 11:59:42.768 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-59-27 11:59:42.769 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-59-27 11:59:47.741 [INFO ] [http-nio-8080-exec-4] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-59-27 11:59:47.742 [INFO ] [http-nio-8080-exec-4] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-59-27 11:59:53.864 [INFO ] [http-nio-8080-exec-5] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-59-27 11:59:53.865 [INFO ] [http-nio-8080-exec-5] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-59-27 11:59:57.275 [INFO ] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-59-27 11:59:57.276 [INFO ] [http-nio-8080-exec-6] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-03-27 12:03:34.919 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 16049 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-03-27 12:03:34.920 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-03-27 12:03:36.093 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.704 seconds (process running for 1.998) 
-2025-03-27 12:03:36.096 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-03-27 12:03:36.097 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-03-27 12:03:47.662 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Successfully getting all employee. 
-2025-03-27 12:03:47.662 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Getting all employees successfully. 
-2025-03-27 12:03:51.778 [WARN ] [http-nio-8080-exec-3] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
-2025-03-27 12:03:51.808 [WARN ] [http-nio-8080-exec-3] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.payroll.app.dto.EmployeeDTO> com.payroll.app.controller.EmployeeController.createEmployee(com.payroll.app.dto.EmployeeDTO) with 2 errors: [Field error in object 'employeeDTO' on field 'name': rejected value [null]; codes [NotNull.employeeDTO.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name]]; default message [must not be null]] [Field error in object 'employeeDTO' on field 'name': rejected value [null]; codes [NotEmpty.employeeDTO.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name]]; default message [Employee name can't be empty]] ] 
-2025-35-27 12:35:37.859 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 18449 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-35-27 12:35:37.870 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-35-27 12:35:40.630 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 4.279 seconds (process running for 4.799) 
-2025-35-27 12:35:40.635 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-35-27 12:35:40.638 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-35-27 12:35:55.935 [WARN ] [http-nio-8080-exec-1] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
-2025-35-27 12:35:55.946 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-35-27 12:35:55.976 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-36-27 12:36:00.535 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-36-27 12:36:00.536 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-51-27 12:51:43.439 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 20118 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-51-27 12:51:43.441 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-51-27 12:51:44.649 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.799 seconds (process running for 2.114) 
-2025-51-27 12:51:44.651 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-51-27 12:51:44.652 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-51-27 12:51:56.807 [ERROR] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Error while getting employee by there id. 
-2025-51-27 12:51:56.808 [ERROR] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Error while getting the employee by there id. 
-2025-52-27 12:52:44.155 [ERROR] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Error while deleting the employee. 
-2025-54-27 12:54:56.575 [ERROR] [http-nio-8080-exec-6] [c.p.a.service.EmployeeService] - Error while getting employee by there id. 
-2025-54-27 12:54:56.575 [ERROR] [http-nio-8080-exec-6] [c.p.a.c.EmployeeController] - Error while getting the employee by there id. 
-2025-58-27 12:58:42.951 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 20855 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-58-27 12:58:42.954 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-58-27 12:58:44.248 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.966 seconds (process running for 2.262) 
-2025-58-27 12:58:44.251 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-58-27 12:58:44.253 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-58-27 12:58:47.923 [ERROR] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Error while getting employee by there id. 
-2025-58-27 12:58:47.923 [ERROR] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Error while getting the employee by there id. 
-2025-59-27 12:59:25.711 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 20997 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-59-27 12:59:25.713 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-59-27 12:59:27.347 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.183 seconds (process running for 2.48) 
-2025-59-27 12:59:27.350 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-59-27 12:59:27.351 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-01-27 13:01:30.042 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 21207 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-01-27 13:01:30.044 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-01-27 13:01:31.482 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.039 seconds (process running for 2.336) 
-2025-01-27 13:01:31.484 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-01-27 13:01:31.485 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-01-27 13:01:34.716 [ERROR] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Error while deleting the employee. 
-2025-36-27 13:36:59.572 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 24028 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-36-27 13:36:59.575 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-37-27 13:37:00.823 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.822 seconds (process running for 2.115) 
-2025-37-27 13:37:00.825 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-37-27 13:37:00.827 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-38-27 13:38:23.727 [WARN ] [http-nio-8080-exec-1] [o.s.w.s.m.s.DefaultHandlerExceptionResolver] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value] 
-2025-40-27 13:40:42.485 [WARN ] [http-nio-8080-exec-3] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
-2025-40-27 13:40:42.498 [INFO ] [http-nio-8080-exec-3] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-40-27 13:40:42.515 [INFO ] [http-nio-8080-exec-3] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-42-27 13:42:33.040 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 24584 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-42-27 13:42:33.042 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-42-27 13:42:34.100 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.578 seconds (process running for 1.886) 
-2025-42-27 13:42:34.103 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-42-27 13:42:34.104 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-42-27 13:42:38.658 [WARN ] [http-nio-8080-exec-1] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
-2025-42-27 13:42:38.697 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-42-27 13:42:38.699 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
-2025-43-27 13:43:05.345 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 24717 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
-2025-43-27 13:43:05.347 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
-2025-43-27 13:43:06.647 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 1.843 seconds (process running for 2.149) 
-2025-43-27 13:43:06.657 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
-2025-43-27 13:43:06.661 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
-2025-43-27 13:43:09.777 [WARN ] [http-nio-8080-exec-2] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
-2025-43-27 13:43:09.828 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
-2025-43-27 13:43:09.832 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-05-28 14:05:05.338 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 46354 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-05-28 14:05:05.340 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-05-28 14:05:07.141 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.718 seconds (process running for 3.532) 
+2025-05-28 14:05:07.144 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-05-28 14:05:07.146 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-06-28 14:06:51.905 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 53130 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-06-28 14:06:51.908 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-06-28 14:06:53.879 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.778 seconds (process running for 3.287) 
+2025-06-28 14:06:53.884 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-06-28 14:06:53.886 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-08-28 14:08:45.830 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 60331 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-08-28 14:08:45.838 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-08-28 14:08:47.851 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 3.211 seconds (process running for 3.818) 
+2025-08-28 14:08:47.855 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-08-28 14:08:47.857 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-08-28 14:08:51.013 [WARN ] [http-nio-8080-exec-2] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-08-28 14:08:51.143 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-08-28 14:08:51.147 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-10-28 14:10:52.900 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 68457 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-10-28 14:10:52.914 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-10-28 14:10:55.490 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 3.633 seconds (process running for 4.02) 
+2025-10-28 14:10:55.495 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-10-28 14:10:55.497 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-10-28 14:10:58.937 [WARN ] [http-nio-8080-exec-1] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-10-28 14:10:59.011 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-10-28 14:10:59.016 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-11-28 14:11:51.793 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 72206 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-11-28 14:11:51.797 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-11-28 14:11:53.448 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.724 seconds (process running for 3.397) 
+2025-11-28 14:11:53.453 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-11-28 14:11:53.456 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-12-28 14:12:16.211 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 73835 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-12-28 14:12:16.223 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-12-28 14:12:18.197 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.739 seconds (process running for 3.101) 
+2025-12-28 14:12:18.200 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-12-28 14:12:18.203 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-13-28 14:13:10.656 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 77501 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-13-28 14:13:10.658 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-13-28 14:13:12.981 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 3.204 seconds (process running for 3.821) 
+2025-13-28 14:13:12.985 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-13-28 14:13:12.986 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-13-28 14:13:13.355 [WARN ] [http-nio-8080-exec-1] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-13-28 14:13:13.404 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-13-28 14:13:13.408 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-13-28 14:13:43.602 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 79631 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-13-28 14:13:43.605 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-13-28 14:13:45.552 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 2.998 seconds (process running for 3.297) 
+2025-13-28 14:13:45.556 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-13-28 14:13:45.558 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-14-28 14:14:04.807 [WARN ] [http-nio-8080-exec-2] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-14-28 14:14:04.972 [INFO ] [http-nio-8080-exec-2] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-14-28 14:14:04.982 [INFO ] [http-nio-8080-exec-2] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-16-28 14:16:03.524 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 89086 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-16-28 14:16:03.527 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-16-28 14:16:06.928 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 4.543 seconds (process running for 4.959) 
+2025-16-28 14:16:06.936 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-16-28 14:16:06.939 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-16-28 14:16:07.579 [WARN ] [http-nio-8080-exec-1] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-16-28 14:16:07.662 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-16-28 14:16:07.665 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 
+2025-16-28 14:16:48.142 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Starting EmployeePayrollAppApplication using Java 22.0.1 with PID 91881 (/home/uday/Documents/Capgemini/employee-payroll-app/target/classes started by uday in /home/uday/Documents/Capgemini/employee-payroll-app) 
+2025-16-28 14:16:48.145 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - The following 1 profile is active: "dev" 
+2025-16-28 14:16:50.303 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Started EmployeePayrollAppApplication in 3.055 seconds (process running for 3.398) 
+2025-16-28 14:16:50.307 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll app started in DEV Environment 
+2025-16-28 14:16:50.311 [INFO ] [main] [c.p.a.EmployeePayrollAppApplication] - Employee Payroll DB User is uday  
+2025-16-28 14:16:50.873 [WARN ] [http-nio-8080-exec-1] [jakarta.persistence.spi] - jakarta.persistence.spi::No valid providers found. 
+2025-16-28 14:16:50.957 [INFO ] [http-nio-8080-exec-1] [c.p.a.service.EmployeeService] - Employee added successfully. 
+2025-16-28 14:16:50.963 [INFO ] [http-nio-8080-exec-1] [c.p.a.c.EmployeeController] - Employee added successfully. 

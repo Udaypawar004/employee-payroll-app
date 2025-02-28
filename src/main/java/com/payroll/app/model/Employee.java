@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -21,7 +22,7 @@ public class Employee {
     @NotNull
     @NotEmpty(message = "Employee name can't be empty")
     @Size(min = 2, message = "Name should have atleast 2 characters")
-    @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Employee name Invalid")
+    @Pattern(regexp = "^[A-Z][a-zA-Z\\s]{2,}$", message = "Employee name Invalid")
     private String name;
 
     @NotNull
@@ -30,7 +31,7 @@ public class Employee {
     private double salary;
     public String gender;
 
-    public String startDate;
+    public LocalDate startDate;
 
     public String note;
 
