@@ -17,7 +17,6 @@ import java.util.List;
 @ToString
 public class EmployeeDTO {
     @Id
-    @NotNull
     private Long id;
 
     @NotNull
