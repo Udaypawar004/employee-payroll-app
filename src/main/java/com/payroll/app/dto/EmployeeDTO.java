@@ -30,7 +30,6 @@ public class EmployeeDTO {
     @Min(value = 500, message = "Min wage should be more than 500")
     private double salary;
 
-    @Pattern(regexp = "male|female", message = "Either male or female allowed")
     public String gender;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
